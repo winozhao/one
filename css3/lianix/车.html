@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+		
+			.box{
+				width: 200px;
+				position: relative;
+				top: 20px;
+				left: 50px;
+				animation: car 5s linear infinite;
+			}
+			.img1{
+				width: 200px;
+				
+				/*position: absolute;
+				animation: car 5s ;
+				animation-fill-mode: forwards;
+				animation-direction: alternate;
+				animation-iteration-count: infinite;*/
+				
+			}
+			.img2{
+				width: 33px;
+				height: 33px;
+				position: absolute;
+				left: 12px;
+				top: 50px;
+				animation: tyre1 1s linear infinite;
+				/*animation-fill-mode: forwards;
+				animation-direction: alternate;
+				animation-iteration-count: infinite;*/
+			}
+			.img3{
+				width: 33px;
+				height: 33px;
+				position: absolute;
+				left: 147px;
+				top: 47px;
+				animation: tyre1 1s linear infinite;
+				/*animation-fill-mode: forwards;
+				animation-direction: alternate;
+				animation-iteration-count: infinite;*/
+			}
+			
+			@keyframes car{
+				0%{left: 10px;transform: skewX(20deg);}
+				10%{left: 15px;transform: skewX(0deg);}
+				40%{left: 950px;transform: skewX(-20deg);}
+				50%{left: 1000px;transform:rotateY(0deg)  skewX(0deg);}
+				60%{left: 1000px;transform: rotateY(180deg) skewX(0deg);}
+				90%{left: 20px;transform: rotateY(180deg) skewX(-20deg);}
+				100%{left: 10px;transform: rotateY(180deg) skewX(0deg);}
+			}
+			@keyframes tyre1{
+				0%{transform: rotate(0deg);}
+				100%{transform: rotate(360deg);}
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+		<div class="box">
+		<img class="img1" src="../img/car.jpg" />
+		<img class="img2" src="../img/1.png" />
+		<img class="img3" src="../img/1.png" />
+		</div>
+	</body>
+</html>
